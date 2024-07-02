@@ -1,0 +1,142 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.back-button {
+    position: absolute;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px; 
+}
+
+.signin-image {
+    width: 50%;
+    display: none;
+}
+
+.signin-image.md-show {
+    display: block;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+.form-heading {
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%; 
+    max-width: 400px; 
+    height: 40px; 
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    outline: none;
+    box-sizing: border-box; 
+}
+
+.input-field:focus {
+    border-color: #1e40af;
+}
+
+.submit-button {
+    background-color: #1e40af;
+    margin: 1.25rem 0;
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 0.375rem;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem;
+    box-sizing: border-box; 
+}
+
+.error-message {
+    margin-top: 1.25rem;
+}
+
+.password-toggle {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.link {
+    color: #3b82f6;
+}
+
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.5rem; 
+    }
+
+    .form-heading {
+        font-size: 1.5rem; 
+    }
+
+    .input-field {
+        width: 90%; 
+    }
+
+    .submit-button {
+        padding: 0.5rem 0.75rem; 
+        font-size: 0.875rem; 
+    }
+
+    .form-container {
+        padding: 0 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 2rem; 
+    }
+
+    .form-heading {
+        font-size: 1.25rem; 
+    }
+
+    .input-field {
+        width: 100%; 
+    }
+
+    .submit-button {
+        padding: 0.5rem;
+        font-size: 0.75rem; 
+    }
+
+    .form-container {
+        padding: 0 5px; 
+    }
+}

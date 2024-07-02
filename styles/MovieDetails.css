@@ -1,0 +1,161 @@
+.movie-details-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.movie-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.movie-description {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.movie-video {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.movie-actions {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #007bff;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.toggle-watched-btn {
+    background-color: #28a745;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.toggle-watched-btn:hover {
+    background-color: #218838;
+}
+
+.movie-reviews {
+    margin-top: 20px;
+}
+
+.movie-review {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.movie-review p {
+    margin: 0;
+}
+
+.back-button {
+    padding: 12px 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.back-button:hover {
+    background-color: darkred;
+}
+
+
+@media (max-width: 768px) {
+    .movie-title {
+        font-size: 1.5rem;
+    }
+
+    .movie-description {
+        font-size: 1rem;
+    }
+
+    .movie-video {
+        margin: 15px 0;
+    }
+
+    .movie-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .back-button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-title {
+        font-size: 1.2rem;
+    }
+
+    .movie-description {
+        font-size: 0.9rem;
+    }
+
+    .movie-video {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .movie-review {
+        padding: 8px;
+    }
+
+    .back-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
