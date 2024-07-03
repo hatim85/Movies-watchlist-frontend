@@ -26,11 +26,6 @@
     height: 100vh;
 }
 
-
-.signup-image {
-    display: block;
-}
-
 .form-wrapper {
     display: flex;
     flex-direction: column;
@@ -43,6 +38,17 @@
 .form-heading {
     font-weight: bold;
     font-size: 2rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.form-field label {
+    margin-bottom: 0.5rem;
 }
 
 .input-field {
@@ -76,4 +82,33 @@
 
 .link {
     color: #3b82f6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .input-field {
+        width: 80vw;
+    }
+
+    .form-wrapper {
+        width: 80%;
+    }
+
+    .submit-button {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-wrapper {
+        width: 90%;
+    }
+
+    .input-field {
+        width: 90vw;
+    }
+
+    .submit-button {
+        width: 90vw;
+    }
 }

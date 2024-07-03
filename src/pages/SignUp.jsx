@@ -41,7 +41,7 @@ function SignUp() {
     try {
       setLoading(true);
       setErrorMessage(null);
-      const res = await fetch(`${import.meta.env.VITE_PORT}/api/auth/signup`, {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/auth/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -68,14 +68,14 @@ function SignUp() {
 
   return (
     <>
-        <Link to="/"><h1 className='header-title'>Movies</h1></Link>
+      <Link to="/"><h1 className='header-title'>Movies</h1></Link>
       <div className='form-container'>
         <div className='form-wrapper'>
           <h1 className='form-heading'>Sign Up</h1>
 
           <form onSubmit={handleSubmit}>
-            <div className='mt-5'>
-              <label htmlFor="username">Name</label><br />
+            <div className='form-field'>
+              <label htmlFor="username">Name</label>
               <input
                 type="text"
                 placeholder='Enter Name'
@@ -86,8 +86,8 @@ function SignUp() {
               />
             </div>
 
-            <div className='mt-5'>
-              <label htmlFor="email">Email Address</label><br />
+            <div className='form-field'>
+              <label htmlFor="email">Email Address</label>
               <input
                 type="text"
                 placeholder='Enter Email'
@@ -98,8 +98,8 @@ function SignUp() {
               />
             </div>
 
-            <div className='mt-5'>
-              <label htmlFor="phone">Phone</label><br />
+            <div className='form-field'>
+              <label htmlFor="phone">Phone</label>
               <input
                 type="number"
                 placeholder='Enter Phone No'
@@ -110,8 +110,8 @@ function SignUp() {
               />
             </div>
 
-            <div className='mt-5'>
-              <label htmlFor="password">Password</label><br />
+            <div className='form-field'>
+              <label htmlFor="password">Password</label>
               <input
                 type="password"
                 placeholder='Enter password'
@@ -122,8 +122,8 @@ function SignUp() {
               />
             </div>
 
-            <div className='mt-5'>
-              <label htmlFor="confirmPassword">Confirm Password</label><br />
+            <div className='form-field'>
+              <label htmlFor="confirmPassword">Confirm Password</label>
               <input
                 type="password"
                 placeholder='Enter password again'

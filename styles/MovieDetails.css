@@ -80,27 +80,6 @@
     margin: 0;
 }
 
-.back-button {
-    padding: 12px 20px;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-}
-
-.back-button:hover {
-    background-color: darkred;
-}
-
-
 @media (max-width: 768px) {
     .movie-title {
         font-size: 1.5rem;
@@ -126,9 +105,6 @@
         padding: 8px;
     }
 
-    .back-button {
-        margin-top: 20px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -154,8 +130,4 @@
         padding: 8px;
     }
 
-    .back-button {
-        padding: 10px;
-        font-size: 14px;
-    }
 }

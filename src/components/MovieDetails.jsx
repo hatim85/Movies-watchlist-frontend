@@ -112,7 +112,6 @@ const MovieDetails = () => {
                 <button onClick={handleToggleWatched} className="btn toggle-watched-btn">
                     {movie.watched ? 'Mark as Unwatched' : 'Mark as Watched'}
                 </button>
-                <button onClick={handleBack} type='button' className='back-button'>Back</button>
             </div>
             <div className="movie-reviews">
                 <h3>Reviews</h3>
