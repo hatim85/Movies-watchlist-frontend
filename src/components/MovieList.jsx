@@ -23,17 +23,21 @@ const MovieList = () => {
         dispatch(signout());
         navigate('/signin');
     };
+    
+    const handleAddMovie=()=>{
+        navigate('/addmovie');
+    }
 
     return (
         <div className="movie-list-container">
             <h1 className="movie-list-title">Movie Watchlist</h1>
             <div className="movie-list-actions">
-                <button className="btn add-movie-btn" onClick={() => window.location.href = '/addmovie'}>Add Movie</button>
+                <button className="btn add-movie-btn" onClick={handleAddMovie}>Add Movie</button>
                 <button className="btn logout-btn" onClick={handleLogout}>Logout</button>
             </div>
             <ul className="movie-list">
-                {movies.map((movie) => (
-                    <MovieItem key={movie._id} movie={movie} />
+                {movies.map((movie,key) => (
+                    <MovieItem key={key} movie={movie} />
                 ))}
             </ul>
         </div>
